@@ -1,0 +1,77 @@
+<%- include('includes/head.ejs')%>
+<!--banner -->
+<div class="page_project">
+	<div class="container">
+		<h2>Project</h2>
+	</div>
+</div>
+
+<!-- 
+<% if (typeof SuccessMessage != 'undefined' && SuccessMessage) { %>
+    <div class="alert alert-success"><%- SuccessMessage %></div>
+    <% } else if(typeof ErrorMessage != 'undefined' && ErrorMessage) { %>
+    <div class="alert alert-danger"><%- ErrorMessage %></div>
+<% } %> -->
+
+<div class="project_info">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<h3> UWA LIVE APPLICATION</h3>
+				<p>Official Hosting Form</p>
+				<form action="/projectpost" method="POST">
+				  <div class="form-group">
+					<label for="formGroupExampleInput">Legal Name</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" name="username" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Nationality</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nationality" name="country"  required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput">Id proof Number</label>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Id proof Number" name="idproofnumber" required>
+				  </div>
+				  <div class="sign">
+					  <label for="formGroupExampleInput2">Attach Id Proof:Front/back</label>
+					  <input type="file" class="form-control-file" id="exampleFormControlFile1" name="idproof" >
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Uwa Live Id</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Uwa Live Id" name="uwaliveid" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput">Date of Birth</label>
+					<input type="Date" class="form-control" id="formGroupExampleInput" placeholder="D.O.B" name="dob" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Residential Address</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Address" name="address" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Email Id</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email" name="email" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Agency Name</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Agency Name"  name="agencyname" required>
+				  </div>
+				  <div class="form-group">
+					<label for="formGroupExampleInput2">Agency Code</label>
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Agency Code" name="agencycode" required>
+				  </div>
+				  
+				  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+				  </form>
+				
+				</form>
+			</div>
+			<div class="col-md-5">
+				<img src="/public/img/agency.jpg" alt="img" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!---footer-->
+<%- include('includes/tail.ejs')%>
